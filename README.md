@@ -1,3 +1,5 @@
+Tracked at <https://youtrack.jetbrains.com/issue/KT-30856>
+
 # Steps to reproduce
 
 This project was created from the Mobile Android/iOS Kotlin Multiplatform template.
@@ -24,3 +26,11 @@ This project was created from the Mobile Android/iOS Kotlin Multiplatform templa
     ```
     Unresolved reference: coroutines
     ```
+
+# Solution
+
+- Update Gradle to 4.10
+- Update Kotlin Gradle Plugin to 1.3.30
+- Update coroutines dependencies to 1.2.0 and specify them for every module (common, ios, android)
+
+Tested in IC 2019.1
