@@ -9,4 +9,6 @@ pluginManagement {
 }
 rootProject.name = 'intellij-kotlin-native-compile-errors'
 
+enableFeaturePreview("GRADLE_METADATA")
+
 include ':app'
