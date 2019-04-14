@@ -1,6 +1,7 @@
 package sample
 
 import kotlinx.coroutines.CoroutineDispatcher
+import kotlinx.coroutines.Dispatchers
 
 actual class Sample {
     actual fun checkMe() = 7
@@ -11,4 +12,4 @@ actual object Platform {
 }
 
 actual val dispatcher: CoroutineDispatcher
-    get() = TODO("not implemented")
+    get() = Dispatchers.Main

@@ -1,5 +1,5 @@
 plugins {
-    id 'kotlin-multiplatform' version '1.3.21'
+    id 'kotlin-multiplatform' version '1.3.30'
 }
 repositories {
     google()
@@ -46,7 +46,7 @@ kotlin {
             dependencies {
                 implementation kotlin('stdlib-common')
                 // added dependency
-                implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core-common:1.1.1"
+                implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core-common:1.2.0"
             }
         }
         commonTest {
@@ -59,7 +59,7 @@ kotlin {
             dependencies {
                 implementation kotlin('stdlib')
                 // added dependency
-                implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.1.1"
+                implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.2.0"
             }
         }
         androidTest {
@@ -71,7 +71,7 @@ kotlin {
         iosMain {
             dependencies {
                 // added dependency
-                implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core-native:1.1.1"
+                implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core-native:1.2.0"
             }
         }
         iosTest {
